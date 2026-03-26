@@ -16,50 +16,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-1M-eoM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-1M-eoM">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz7-Bh-45c">
-                                <rect key="frame" x="134" y="148" width="123" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
-                                <color key="textColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud.sun" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-xp-lWC">
-                                <rect key="frame" x="76" y="174.33333333333337" width="240" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <textField hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="RVi-ec-Poc">
-                                <rect key="frame" x="53" y="621" width="244" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="WeatherColor"/>
-                                <color key="textColor" name="WeatherColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gg-Ga-eHR">
-                                <rect key="frame" x="305" y="620" width="50" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="WeatherColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
-                                    <backgroundConfiguration key="background"/>
-                                    <color key="baseForegroundColor" name="WeatherColorForDark"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="29 °C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9q-Lf-7SD">
-                                <rect key="frame" x="147" y="391" width="96" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="60"/>
-                                <color key="textColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CQw-3V-zMf">
+                                <rect key="frame" x="20" y="118" width="353" height="566"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz7-Bh-45c">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="91"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="45"/>
+                                        <color key="textColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-xp-lWC">
+                                        <rect key="frame" x="0.0" y="111.33333333333331" width="353.66666666666669" height="199"/>
+                                        <color key="tintColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="D2L-QS-MO1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29 °C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9q-Lf-7SD">
+                                        <rect key="frame" x="0.0" y="331" width="353" height="170"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="170" id="mNF-T7-Nbk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="60"/>
+                                        <color key="textColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="61k-oZ-Zad">
+                                        <rect key="frame" x="0.0" y="521" width="353" height="45"/>
+                                        <subviews>
+                                            <textField contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="RVi-ec-Poc">
+                                                <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="45"/>
+                                                <color key="backgroundColor" name="WeatherColor"/>
+                                                <color key="textColor" name="WeatherColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gg-Ga-eHR">
+                                                <rect key="frame" x="303.33333333333331" y="0.0" width="49.666666666666686" height="45"/>
+                                                <color key="backgroundColor" name="WeatherColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
+                                                    <backgroundConfiguration key="background"/>
+                                                    <color key="baseForegroundColor" name="WeatherColorForDark"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="8ev-e4-kJJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="CQw-3V-zMf" secondAttribute="top" id="4KO-TX-HLS"/>
+                            <constraint firstItem="1dx-1M-eoM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Ft-Hu-IbJ"/>
+                            <constraint firstItem="1dx-1M-eoM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EtI-7G-ALQ"/>
+                            <constraint firstItem="1dx-1M-eoM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="RWh-0l-n15"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CQw-3V-zMf" secondAttribute="bottom" constant="100" id="dxe-QM-YS6"/>
+                            <constraint firstAttribute="bottom" secondItem="1dx-1M-eoM" secondAttribute="bottom" id="hHM-Lc-GtJ"/>
+                            <constraint firstItem="CQw-3V-zMf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k4p-6Y-Wet"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CQw-3V-zMf" secondAttribute="trailing" constant="20" id="mCP-2m-lJJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
