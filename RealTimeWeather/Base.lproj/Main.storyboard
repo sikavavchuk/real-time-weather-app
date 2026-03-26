@@ -67,6 +67,9 @@
                                                     <backgroundConfiguration key="background"/>
                                                     <color key="baseForegroundColor" name="WeatherColorForDark"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SjF-Q1-dhL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -89,6 +92,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CQw-3V-zMf" secondAttribute="trailing" constant="20" id="mCP-2m-lJJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="iz7-Bh-45c" id="8JW-k6-acg"/>
+                        <outlet property="conditionImageView" destination="Tfw-xp-lWC" id="gZB-s7-pes"/>
+                        <outlet property="searchTextField" destination="RVi-ec-Poc" id="xPW-Wc-3x7"/>
+                        <outlet property="temperatureLabel" destination="L9q-Lf-7SD" id="Cq2-FF-uuN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
