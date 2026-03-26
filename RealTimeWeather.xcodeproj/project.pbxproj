@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8652D8A62F75452A0047A618 /* Exceptions for "RealTimeWeather" folder in "RealTimeWeather" target */ = {
+		86143B852F75E74800524000 /* Exceptions for "RealTimeWeather" folder in "RealTimeWeather" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,10 +21,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8652D8962F75452A0047A618 /* RealTimeWeather */ = {
+		86143B7E2F75E74800524000 /* RealTimeWeather */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8652D8A62F75452A0047A618 /* Exceptions for "RealTimeWeather" folder in "RealTimeWeather" target */,
+				86143B852F75E74800524000 /* Exceptions for "RealTimeWeather" folder in "RealTimeWeather" target */,
 			);
 			path = RealTimeWeather;
 			sourceTree = "<group>";
@@ -45,7 +45,7 @@
 		8652D88B2F75452A0047A618 = {
 			isa = PBXGroup;
 			children = (
-				8652D8962F75452A0047A618 /* RealTimeWeather */,
+				86143B7E2F75E74800524000 /* RealTimeWeather */,
 				8652D8952F75452A0047A618 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +74,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8652D8962F75452A0047A618 /* RealTimeWeather */,
+				86143B7E2F75E74800524000 /* RealTimeWeather */,
 			);
 			name = RealTimeWeather;
 			packageProductDependencies = (

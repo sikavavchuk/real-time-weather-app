@@ -55,7 +55,7 @@
                                             <textField contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="RVi-ec-Poc">
                                                 <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="45"/>
                                                 <color key="backgroundColor" name="WeatherColor"/>
-                                                <color key="textColor" name="WeatherColor"/>
+                                                <color key="textColor" name="WeatherColorForDark"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                             </textField>
