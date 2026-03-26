@@ -57,7 +57,7 @@
                                                 <color key="backgroundColor" name="WeatherColor"/>
                                                 <color key="textColor" name="WeatherColorForDark"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="light" returnKeyType="go"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gg-Ga-eHR">
                                                 <rect key="frame" x="303.33333333333331" y="0.0" width="49.666666666666686" height="45"/>
