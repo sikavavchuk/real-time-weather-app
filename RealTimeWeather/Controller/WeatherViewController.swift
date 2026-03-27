@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate{
+class WeatherViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var conditionImageView: UIImageView!
