@@ -98,7 +98,6 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-Ax-YXb">
                                         <rect key="frame" x="0.0" y="277" width="353" height="389"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -138,9 +137,6 @@
         <namedColor name="WeatherColorForDark">
             <color red="0.16300000250339508" green="0.042000003159046173" blue="0.1120000034570694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
