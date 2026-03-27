@@ -32,7 +32,6 @@ class WeatherViewController: UIViewController, UITextFieldDelegate{
     
     //hide keyboard
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print(searchTextField.text!)
         textField.endEditing(true)
         return true
     }
