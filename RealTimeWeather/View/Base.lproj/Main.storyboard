@@ -21,24 +21,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="DUp-oL-p7E">
-                                <rect key="frame" x="20" y="118" width="353" height="666"/>
+                                <rect key="frame" x="20" y="158" width="353" height="626"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0pI-2x-p3P">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="RVi-ec-Poc">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="45"/>
                                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                                 <color key="textColor" name="WeatherColorForDark"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="light" returnKeyType="go"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gg-Ga-eHR">
-                                                <rect key="frame" x="308" y="0.0" width="45" height="45"/>
+                                                <rect key="frame" x="303.33333333333331" y="0.0" width="49.666666666666686" height="45"/>
                                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="szm-iO-CYY"/>
-                                                    <constraint firstAttribute="width" constant="45" id="yeo-fg-O7h"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
@@ -97,7 +96,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-Ax-YXb">
-                                        <rect key="frame" x="0.0" y="277" width="353" height="389"/>
+                                        <rect key="frame" x="0.0" y="277" width="353" height="349"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -107,7 +106,7 @@
                         <constraints>
                             <constraint firstItem="1dx-1M-eoM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FQt-dU-x1k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DUp-oL-p7E" secondAttribute="trailing" constant="20" id="FX3-4K-Ctn"/>
-                            <constraint firstItem="DUp-oL-p7E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="O7g-Xo-ZgR"/>
+                            <constraint firstItem="DUp-oL-p7E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="O7g-Xo-ZgR"/>
                             <constraint firstItem="1dx-1M-eoM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OiH-hw-IMk"/>
                             <constraint firstItem="DUp-oL-p7E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bCE-DI-Tq3"/>
                             <constraint firstAttribute="bottom" secondItem="1dx-1M-eoM" secondAttribute="bottom" id="bmP-Ws-oc4"/>
@@ -120,6 +119,7 @@
                         <outlet property="conditionImageView" destination="Tfw-xp-lWC" id="gZB-s7-pes"/>
                         <outlet property="searchTextField" destination="RVi-ec-Poc" id="xPW-Wc-3x7"/>
                         <outlet property="temperatureLabel" destination="L9q-Lf-7SD" id="Cq2-FF-uuN"/>
+                        <outlet property="weatherDescriptionLabel" destination="21K-lv-HOs" id="HFb-ND-EuF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var weatherDescriptionLabel: UILabel!
     
     var weatherManager = WeatherManager()
     
