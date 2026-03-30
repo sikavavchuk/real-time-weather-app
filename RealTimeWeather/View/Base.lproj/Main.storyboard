@@ -26,8 +26,21 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0pI-2x-p3P">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMU-Op-Bfp">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="CMU-Op-Bfp" secondAttribute="height" multiplier="1:1" id="mSx-l9-pZ0"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="location" catalog="system"/>
+                                                <connections>
+                                                    <action selector="currentLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zw-gu-ePR"/>
+                                                </connections>
+                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="RVi-ec-Poc">
-                                                <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="45"/>
+                                                <rect key="frame" x="53.000000000000014" y="0.0" width="242.33333333333337" height="45"/>
                                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                                 <color key="textColor" name="WeatherColorForDark"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -54,33 +67,33 @@
                                         <rect key="frame" x="0.0" y="78" width="353" height="105"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwf-Dp-usb">
-                                                <rect key="frame" x="0.0" y="0.0" width="13" height="105"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="3" height="105"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="utr-zY-fPa">
-                                                <rect key="frame" x="33" y="0.0" width="150" height="105"/>
+                                                <rect key="frame" x="23" y="0.0" width="200" height="105"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="City name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz7-Bh-45c">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="45"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="San Francisco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz7-Bh-45c">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="45"/>
                                                         <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="45"/>
                                                         <color key="textColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29 °C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9q-Lf-7SD">
-                                                        <rect key="frame" x="0.0" y="45" width="150" height="60"/>
+                                                        <rect key="frame" x="0.0" y="45" width="200" height="60"/>
                                                         <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="60"/>
                                                         <color key="textColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="eIF-0R-Oqa"/>
+                                                    <constraint firstAttribute="width" constant="200" id="eIF-0R-Oqa"/>
                                                 </constraints>
                                             </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-xp-lWC">
-                                                <rect key="frame" x="203" y="0.3333333333333357" width="150.66666666666669" height="104"/>
+                                                <rect key="frame" x="243" y="0.3333333333333357" width="110.66666666666663" height="104"/>
                                                 <color key="tintColor" red="0.16271105408668518" green="0.041685707867145538" blue="0.11170930415391922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="d2u-Uf-gXp"/>
+                                                    <constraint firstAttribute="width" constant="110" id="d2u-Uf-gXp"/>
                                                     <constraint firstAttribute="height" constant="105" id="j7y-yG-1JL"/>
                                                 </constraints>
                                             </imageView>
@@ -130,6 +143,7 @@
     <resources>
         <image name="Background" width="4000" height="6000"/>
         <image name="cloud.sun" catalog="system" width="128" height="98"/>
+        <image name="location" catalog="system" width="128" height="119"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <namedColor name="BackgroundColor">
             <color red="0.94099998474121094" green="0.75199997425079346" blue="0.81000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -138,7 +152,7 @@
             <color red="0.16300000250339508" green="0.042000003159046173" blue="0.1120000034570694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

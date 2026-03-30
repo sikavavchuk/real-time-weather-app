@@ -18,6 +18,8 @@ class WeatherViewController: UIViewController {
     
     var weatherManager = WeatherManager()
     let locationManager = CLLocationManager()
+    var lan: CLLocationDegrees?
+    var lon: CLLocationDegrees?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +39,7 @@ class WeatherViewController: UIViewController {
 extension WeatherViewController: UITextFieldDelegate {
     
     @IBAction func searchPressed(_ sender: UIButton) {
-        
-        print(searchTextField.text!)
         searchTextField.endEditing(true)
-        
     }
     
     //hide keyboard
@@ -78,6 +77,9 @@ extension WeatherViewController: WeatherManagerDelegate {
         DispatchQueue.main.async {
             self.temperatureLabel.text = weather.temperatureString
             self.conditionImageView.image = UIImage(systemName: weather.conditionName)
+            self.cityLabel.text = weather.cityName
+            print(weather.cityName)
+            self.weatherDescriptionLabel.text = weather.weatherDescription
         }
     }
     
@@ -94,8 +96,19 @@ protocol LocationManagerDelegate {
 //MARK: - CLLocationManagerDelegate
 
 extension WeatherViewController: CLLocationManagerDelegate {
+    
     @objc func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("Got location data!")
+        if let location = locations.last {
+            lan = location.coordinate.latitude
+            lon = location.coordinate.longitude
+            
+            weatherManager.fetchWeather(latitude: lan!, longitude: lon!)
+        }
+    }
+    
+    @IBAction func currentLocationButtonPressed(_ sender: UIButton) {
+        
+        weatherManager.fetchWeather(latitude: lan!, longitude: lon!)
     }
     
     @objc func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
