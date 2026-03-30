@@ -39,7 +39,7 @@ struct WeatherModel {
     
     var conditionBackground: String {
         switch conditionName {
-        case "sun.max":
+        case "sun.max", "cloud.bolt", "cloud":
             return "sunny-weather"
         default:
             return "cloudy-weather"
