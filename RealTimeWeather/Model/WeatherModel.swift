@@ -32,10 +32,17 @@ struct WeatherModel {
             return "cloud.fog"
         case 800:
             return "sun.max"
-        case 801...804:
-            return "cloud.bolt"
         default:
             return "cloud"
+        }
+    }
+    
+    var conditionBackground: String {
+        switch conditionName {
+        case "sun.max":
+            return "sunny-weather"
+        default:
+            return "cloudy-weather"
         }
     }
 }
